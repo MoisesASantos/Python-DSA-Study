@@ -7,3 +7,6 @@ import math
 
 def get_influencer_score(num_followers, average_engagement_percentage):
     return average_engagement_percentage * math.log(num_followers, 2)
+
+
+Exponents grow very quickly, and logarithms grow very slowly. A logarithm is the inverse of an exponent.
