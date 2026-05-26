@@ -40,3 +40,15 @@ def get_follower_prediction(follower_count, influencer_type, num_months):
 Note: At this moment my code should be better, but I have few time to complete the lesson so I just make to work, late, I'll review this and make something better
 
 
+And 2 minutes later, I decide to make the better code now, and, lady's and gentleman
+
+def get_follower_prediction(follower_count, influencer_type, num_months):
+    if  influencer_type == "fitness":
+            follower_growth = follower_count * 4 ** num_months
+    elif influencer_type == "cosmetic":
+            follower_growth = follower_count * 3 ** num_months
+    else:
+            follower_growth = follower_count * 2 ** num_months
+    return follower_growth
+
+
