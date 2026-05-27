@@ -13,6 +13,20 @@ For now, we'll just focus on two methods: push and size. Notice that the Stack c
     Complete the size method. It should return the number of items in the stack.
 
 
+Stack Speed
+
+You might be wondering, "why would I use a stack instead of a list?" or "Isn't this just a list with fewer features?"
+
+And you'd be right! A stack is a list with fewer features, but that's the point. By restricting the ways we can interact with the data, we guarantee that certain operations are blazingly fast. Here are all the operations a typical stack supports, along with their Big O time complexity:
+Operation 	Big O 	Description
+push 	O(1) 	Add an item to the top of the stack
+pop 	O(1) 	Remove and return the top item from the stack
+peek 	O(1) 	Return the top item from the stack without modifying the stack
+size 	O(1) 	Return the number of items in the stack
+
+It's all O(1)! That means no matter how many items are in the stack, these operations will always take the same amount of time. Stacks are really fast and are usually the best choice when the behavior of a stack is all you need.
+
+
 class Stack:
     def __init__(self):
         self.items = []
