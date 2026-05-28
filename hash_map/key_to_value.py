@@ -31,3 +31,5 @@ class HashMap:
             if v != None:
                 buckets.append(v)
         return str(buckets)
+
+Nota: Cálcula todo unicode da chave, faz o modulo pelo tamanho do hashmap e retorna o index do valor
